@@ -1,0 +1,47 @@
+@import 'sass/default';
+@import 'sass/responsive';
+@import 'sass/font';
+@import "sass/tailwindcss/dist/base";
+@import "sass/tailwindcss/dist/components";
+@import "sass/tailwindcss/dist/utilities";
+
+/*@import 'css/semantic.css';*/
+
+
+
+body,html{
+//    height:100%;
+    color: #666;
+    font-size: 14px;
+    padding: $pad0;
+   font-family: 'Montserrat', sans-serif !important;
+    font-weight:400;
+     --img-maxwidth: 250px;
+}
+body{ 
+     scrollbar-color:  #a0a0a5 #fff;
+    scrollbar-width: thin;
+}
+.text-brand-blue{
+    color: #3bb8ce;
+} 
+.bg-brand-blue{
+    background: #3bb8ce;
+
+    &:hover{
+      background: #169ab1 !important;  
+    }
+}
+.porse h3{
+ 
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 1.6;
+}
+
+
+@media(max-width:767px){
+    .mobile-nav{
+        display: none;
+    }
+}
